@@ -12,14 +12,14 @@ Version Python License Pentesters
 
 NightRider is a specialized JavaScript vulnerability scanner designed for authorized penetration testers and security researchers. It automates the discovery of sensitive tokens, hardcoded secrets, and cryptographic material leaked within client-side JavaScript bundles and inline scripts.
 
-⚡ Features
+ Features
 Automated JS Discovery: Automatically crawls a target URL to find all linked .js files and extracts inline scripts from HTML.
 Deep Pattern Analysis: Detects over 10+ categories of secrets including JWTs, AWS Keys, Stripe Secrets, Firebase Configs, and more.
 Impact Assessment: Every finding includes a detailed Business Impact section, explaining exactly what an attacker could do with the leaked data.
 Rich Terminal UI: Beautifully formatted tables, panels, and progress bars powered by the Rich library.
 Glitch Startup Sequence: A unique, hacker-aesthetic startup animation.
 Flexible Reporting: Save findings instantly as JSON for automated workflows or export as TXT for manual reporting.
-🔍 Detection Capabilities
+Detection Capabilities
 
 Vulnerability Type	Severity	Impact
 JWT Tokens	CRITICAL	Account Takeover / Admin impersonation
@@ -42,31 +42,25 @@ Internal Endpoints	MEDIUM	Infrastructure Discovery / SSRF Targets
 Clone the repository:
 bash
 
-
-
 git clone https://github.com/Desmued2/nightrider.git
 cd nightrider
 Install dependencies:
 bash
 
-
-
 pip install rich requests urllib3
 Run the scanner:
 sudo python3 Nightrider.py
 
-
-
-python3 nightrider.py
-🛠 Usage
+ Usage
 Launch: Open the tool and watch the glitch initialization.
 Scan: Select option 1 and enter your target URL (e.g., https://target-site.com).
 Analyze: Review the detailed findings including the Description, Exploitation Vector, and Impact.
 Report: Use the post-scan prompt to save your findings as a .json or .txt report.
-🛡 Disclaimer
+
+Disclaimer
 NightRider is intended for authorized security auditing purposes only. Accessing systems without explicit written permission is illegal. The developers of NightRider assume no liability and are not responsible for any misuse or damage caused by this program.
 
-🤝 Contributing
+Contributing
 Contributions are welcome! If you have a regex pattern for a common token or want to improve the UI:
 
 Fork the repo.
