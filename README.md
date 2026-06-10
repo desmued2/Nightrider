@@ -14,6 +14,14 @@ Glitch Startup Sequence: A unique, hacker-aesthetic startup animation.
 Flexible Reporting: Save findings instantly as JSON for automated workflows or export as TXT for manual reporting.
 🔍 Detection Capabilities
 
+Vulnerability Type	Severity	Impact
+JWT Tokens	CRITICAL	Account Takeover / Admin impersonation
+AWS Credentials	CRITICAL	Cloud Infrastructure Hijacking
+Stripe Secret Keys	CRITICAL	Financial Theft / Payment Processing Abuse
+GitHub PATs	CRITICAL	Source Code Exfiltration / CI/CD Compromise
+Firebase Configs	HIGH	Database Dumping / Unauthorized Auth
+Auth Tokens	HIGH	Immediate Session Hijacking
+Internal Endpoints	MEDIUM	Infrastructure Discovery / SSRF Targets
 
 Vulnerability Type	Severity	Impact
 JWT Tokens	CRITICAL	Account Takeover / Admin impersonation
